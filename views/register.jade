@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  form(action='/users/register', method='post')
+    div Username
+      input(type='text', name='username')
+    div Password
+      input(type='text', name='password')
+    div
+      input(type='submit', value='Register')
